@@ -1,0 +1,30 @@
+SELECT  ?y ?x   WHERE {
+ ?y <http://dbpedia.org/ontology/ingredient> :Milk
+}
+LIMIT 100
+
+
+
+SELECT  ?y ?x   WHERE {
+ ?y <http://dbpedia.org/ontology/ingredient> :Apricot
+}
+LIMIT 100
+
+SELECT  ?y ?x   WHERE {
+ ?y <http://dbpedia.org/ontology/species> :Apple
+}
+LIMIT 10
+
+SELECT  ?y ?x   WHERE {
+ ?y <http://dbpedia.org/ontology/phylum> ?x
+}
+LIMI
+
+
+SELECT distinct ?property 
+WHERE {
+  { <http://dbpedia.org/resource/Mighty_Mouse> ?property ?hasValue }
+  UNION
+  { ?isValueOf ?property <http://dbpedia.org/resource/Mighty_Mouse> }
+}
+
